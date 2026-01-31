@@ -896,7 +896,7 @@
             border: 2px solid rgba(255, 255, 255, 0.2);
             border-radius: 8px;
             background: rgba(255, 255, 255, 0.1);
-            color: white;
+            color: rgb(0, 0, 0);
             font-size: 1em;
             font-family: 'DM Sans', sans-serif;
             transition: all 0.3s ease;
@@ -1208,6 +1208,7 @@
         }
 
         .quantity-input {
+            color: black;
             width: 50px;
             text-align: center;
             padding: 8px 5px;
