@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/Product_images/JIGlmGfldDcQSUfJapkyqTGcRZlDNBXDNwE2QuXd.png">
+    <title>Fresh Farm Milk - Delivered to Your Doorstep</title>
+    <link rel="stylesheet" href="/Demo Final/style (4).css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Menu Overlay -->
+    <div class="menu-overlay" onclick="closeMenu()"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <img src="/Product_images/JIGlmGfldDcQSUfJapkyqTGcRZlDNBXDNwE2QuXd.png" alt="Farm Lanka Logo" class="navbar-icon">
+            <span>Farm Lanka</span>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="navbar-links">
+            <a href="#about" onclick="closeMenu()">About Us</a>
+            <a href="#" onclick="openOrderModal(); closeMenu(); return false;">Order Now</a>
+            <a href="#contact" onclick="closeMenu()">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+    <div class="hero-container">
+        <!-- Hero Image -->
+        <div class="hero-image-wrapper">
+            <img src="/Product_images/banner.jpg" 
+                 alt="Farm Fresh Milk - Pure and Nutritious" 
+                 class="hero-image">
+        </div>
+
+        <!-- Call to Action -->
+        <div class="hero-cta">
+            <h1>Farm Fresh Milk Delivered Daily</h1>
+            <p>Experience the pure taste of nature with our premium quality milk, straight from local farms to your doorstep</p>
+            <button class="order-btn" onclick="openOrderModal()">Order Now</button>
+        </div>
+    </div>
+</section>
+
+    <!-- Products Section -->
+    
+
+    <!-- Milk Products Cards Section -->
+    <section class="product-collection" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Products</h2>
+                <p class="section-subtitle">Discover our curated selection of premium products</p>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product Card 1 -->
+                <article class="product-card">
+                    <div class="product-image-wrapper">
+                        <span class="product-badge">New</span>
+                        <img src="/Product_images/big-bottle-plain.jpg" 
+                             alt="Organic Whole Milk" 
+                             class="product-image">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Goat Milk (Regular)</h3>
+                        <p class="product-quantity">500 ML</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="product-price-currency">Rs.</span>590
+                            </div>
+                            <button class="add-to-cart-btn" onclick="openOrderModal()">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product Card 2 -->
+                <article class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="/Product_images/small-bottle-plain.jpg" 
+                             alt="Artisan Honey" 
+                             class="product-image">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Goat Milk (Regular)</h3>
+                        <p class="product-quantity">190 ML</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="product-price-currency">Rs.</span>260
+                            </div>
+                            <button class="add-to-cart-btn" onclick="openOrderModal()">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product Card 3 -->
+                <article class="product-card">
+                    <div class="product-image-wrapper">
+                        <span class="product-badge">Sale</span>
+                        <img src="/Product_images/4.png" 
+                             alt="Cold Pressed Olive Oil" 
+                             class="product-image">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Goat Milk (Almond)</h3>
+                        <p class="product-quantity">190 ML</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="product-price-currency">Rs.</span>260
+                            </div>
+                            <button class="add-to-cart-btn" onclick="scrollToTop()">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product Card 4 -->
+                <article class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="/Product_images/1.png" 
+                             alt="Almond Milk" 
+                             class="product-image">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Goat Milk (Chocolate)</h3>
+                        <p class="product-quantity">190 ML</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="product-price-currency">Rs.</span>260
+                            </div>
+                            <button class="add-to-cart-btn" onclick="openOrderModal()">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product Card 5 -->
+                <article class="product-card">
+                    <div class="product-image-wrapper">
+                        <span class="product-badge">Popular</span>
+                        <img src="/Product_images/2.png" 
+                             alt="Greek Yogurt" 
+                             class="product-image">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Goat Milk (Faluda)</h3>
+                        <p class="product-quantity">190 ML</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="product-price-currency">Rs.</span>260
+                            </div>
+                            <button class="add-to-cart-btn" onclick="openOrderModal()">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product Card 6 -->
+                <article class="product-card">
+                    <div class="product-image-wrapper">
+                        <img src="/Product_images/3.png" 
+                             alt="Orange Juice" 
+                             class="product-image">
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-name">Goat Milk (Vanilla)</h3>
+                        <p class="product-quantity">190 ML</p>
+                        <div class="product-footer">
+                            <div class="product-price">
+                                <span class="product-price-currency">Rs.</span>260
+                            </div>
+                            <button class="add-to-cart-btn" onclick="openOrderModal()">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"The best milk I've ever tasted! My kids love it, and I feel good knowing it's fresh and natural. Delivery is always on time!"</p>
+                <p class="testimonial-author">- Priya S., Colombo</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"I switched to goat milk for health reasons, and Fresh Farm Milk has been a game-changer. Excellent quality and service!"</p>
+                <p class="testimonial-author">- Rohan M., Kandy</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Supporting local farmers while getting premium quality milk? That's a win-win! Highly recommend Fresh Farm Milk."</p>
+                <p class="testimonial-author">- Anushka P., Galle</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="why-choose-us" id="why-choose-us">
+    <div class="why-choose-container">
+        <div class="why-choose-header">
+            <h2>Why Choose Us</h2>
+            <p>Discover what makes us the preferred choice for farm-fresh dairy products across Sri Lanka</p>
+        </div>
+
+        <div class="why-choose-grid">
+            <!-- Card 1: 100% Fresh -->
+            <div class="why-choose-card">
+                <div class="why-choose-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C12 2 7 6 7 10C7 13.31 9.69 16 13 16C16.31 16 19 13.31 19 10C19 6 14 2 14 2H12Z" stroke="#04195e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        <path d="M12 16V22" stroke="#04195e" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M8 19H16" stroke="#63a200" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="12" cy="10" r="2" fill="#63a200"/>
+                    </svg>
+                </div>
+                <h3>100% Fresh</h3>
+                <p>Our milk is collected daily and delivered fresh to ensure maximum nutrition and taste.</p>
+            </div>
+
+            <!-- Card 2: Island-Wide Delivery -->
+            <div class="why-choose-card">
+                <div class="why-choose-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 3H15V13H1V3Z" stroke="#04195e" stroke-width="2" stroke-linejoin="round" fill="none"/>
+                        <path d="M15 5H19L23 9V13H15V5Z" stroke="#04195e" stroke-width="2" stroke-linejoin="round" fill="none"/>
+                        <circle cx="5.5" cy="17.5" r="2.5" stroke="#04195e" stroke-width="2" fill="none"/>
+                        <circle cx="18.5" cy="17.5" r="2.5" stroke="#04195e" stroke-width="2" fill="none"/>
+                        <path d="M8 17.5H16" stroke="#04195e" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M3 17.5H1" stroke="#04195e" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M21 17.5H23" stroke="#04195e" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M6 8L10 8" stroke="#63a200" stroke-width="2" stroke-linecap="round"/>
+                        <circle cx="19" cy="9" r="1" fill="#63a200"/>
+                    </svg>
+                </div>
+                <h3>We offer Delivery!</h3>
+                <p>Learn more about delivery below sections.</p>
+            </div>
+
+            <!-- Card 3: Hygienic Packaging -->
+            <div class="why-choose-card">
+                <div class="why-choose-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 8V16C21 17.1 20.1 18 19 18H5C3.9 18 3 17.1 3 16V8" stroke="#04195e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        <path d="M1 4H23V8H1V4Z" stroke="#04195e" stroke-width="2" stroke-linejoin="round" fill="none"/>
+                        <path d="M12 8V18" stroke="#04195e" stroke-width="2" stroke-linecap="round"/>
+                        <rect x="7" y="11" width="10" height="4" rx="1" stroke="#63a200" stroke-width="2" fill="none"/>
+                        <circle cx="12" cy="6" r="1" fill="#63a200"/>
+                        <path d="M9 13H15" stroke="#04195e" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Hygienic Packaging</h3>
+                <p>State-of-the-art packaging ensures safety and maintains freshness.</p>
+            </div>
+
+            <!-- Card 4: Supporting Local -->
+            <div class="why-choose-card">
+                <div class="why-choose-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#04195e" stroke-width="2" fill="none"/>
+                        <path d="M3.51 9H20.49" stroke="#04195e" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M3.51 15H20.49" stroke="#04195e" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M12 3C14.5 6 16 9 16 12C16 15 14.5 18 12 21" stroke="#04195e" stroke-width="2" stroke-linecap="round" fill="none"/>
+                        <path d="M12 3C9.5 6 8 9 8 12C8 15 9.5 18 12 21" stroke="#04195e" stroke-width="2" stroke-linecap="round" fill="none"/>
+                        <circle cx="12" cy="12" r="2" fill="#63a200"/>
+                        <path d="M7 7L9 9" stroke="#63a200" stroke-width="1.5" stroke-linecap="round"/>
+                        <path d="M15 15L17 17" stroke="#63a200" stroke-width="1.5" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <h3>Supporting Local</h3>
+                <p>Every purchase supports Sri Lankan farmers and sustainable agriculture.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Welcome to Fresh Farm Milk, Sri Lanka's trusted source for premium quality goat and cow milk. Our journey began with a simple mission: to bring the freshest, most nutritious milk straight from our farm to your family's table.</p>
+                <p>We take pride in our commitment to natural farming practices, ensuring that every bottle of milk we deliver is packed with wholesome goodness. Our happy, healthy animals graze on lush green pastures, and we never use artificial hormones or additives.</p>
+                <p>Supporting local farmers and communities is at the heart of what we do. When you choose Fresh Farm Milk, you're not just getting the best milk – you're supporting sustainable agriculture and the livelihoods of Sri Lankan farming families.</p>
+            </div>
+            <img src="https://plus.unsplash.com/premium_photo-1723488393916-eef2bffed487?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Z29hdHMlMjBhZXN0aGV0aWN8ZW58MHx8MHx8fDA%3D" alt="Farm" class="about-image">
+        </div>
+    </section>
+
+    <!-- Delivery Section -->
+    <section class="delivery">
+        <h2>Delivery Information</h2>
+        <div class="delivery-info">
+            <div class="delivery-card">
+                <h3>Coverage Areas</h3>
+                <p>We deliver to Colombo, Kandy, Galle, Negombo, Jaffna, and surrounding areas. Contact us for delivery to other locations!</p>
+            </div>
+            <div class="delivery-card">
+                <h3>Delivery Times</h3>
+                <p>Orders placed before 6 PM are delivered the next morning. Fresh milk at your doorstep every day!</p>
+            </div>
+            <div class="delivery-card">
+                <h3>Minimum Order</h3>
+                <p>No minimum order requirement. Order as few or as many bottles as you need!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Is your milk pasteurized?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, all our milk is carefully pasteurized to ensure safety while preserving maximum nutrients and natural flavor.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Do you deliver nationwide?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    We currently deliver to major cities and surrounding areas. Contact us to check if we deliver to your location!
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    Can I subscribe for daily delivery?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Absolutely! Contact us via WhatsApp to set up a daily or weekly subscription plan tailored to your needs.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    What if I'm not satisfied with my order?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Your satisfaction is our priority. If you're not completely happy with your order, please contact us immediately and we'll make it right.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-main">
+            <!-- Left Side - Contact Form -->
+            <div class="footer-left">
+                <h3>Get In Touch</h3>
+                <p>Have questions? Send us a message and we'll get back to you shortly.</p>
+                
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message here..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-form-btn">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Right Side - Contact Information -->
+            <div class="footer-right">
+                <h3>Contact Us</h3>
+                
+                <div class="contact-info">
+                    <!-- Email -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <span class="label">Email</span>
+                            <a href="mailto:farmlanka@gmail.com" class="value">farmlanka@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <span class="label">Phone</span>
+                            <a href="tel:+94777300555" class="value">+94 77 730 0555</a>
+                        </div>
+                    </div>
+
+                    <!-- WhatsApp -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.472 14.382C17.015 14.154 14.763 13.042 14.341 12.893C13.919 12.744 13.615 12.669 13.311 13.126C13.007 13.583 12.086 14.624 11.818 14.928C11.55 15.232 11.282 15.268 10.825 15.04C10.368 14.812 8.914 14.346 7.188 12.812C5.846 11.616 4.942 10.142 4.674 9.685C4.406 9.228 4.643 8.982 4.872 8.754C5.078 8.548 5.329 8.216 5.557 7.948C5.785 7.68 5.86 7.484 6.009 7.18C6.158 6.876 6.083 6.608 5.969 6.38C5.855 6.152 4.951 3.898 4.565 2.984C4.179 2.07 3.793 2.196 3.525 2.196C3.257 2.196 2.953 2.196 2.649 2.196C2.345 2.196 1.852 2.31 1.43 2.767C1.008 3.224 -0.104 4.336 -0.104 6.59C-0.104 8.844 1.466 11.026 1.694 11.33C1.922 11.634 4.942 16.244 9.516 18.21C14.09 20.176 14.09 19.495 15.083 19.423C16.076 19.351 17.984 18.318 18.37 17.212C18.756 16.106 18.756 15.178 18.642 14.95C18.528 14.722 18.224 14.608 17.767 14.38L17.472 14.382Z" fill="white"/>
+                                <path d="M20.52 3.449C18.24 1.245 15.24 0.001 12.045 0C5.463 0 0.104 5.334 0.101 11.892C0.1 13.988 0.644 16.034 1.68 17.837L0 24L6.335 22.346C8.073 23.289 10.035 23.783 12.03 23.784H12.036C18.617 23.784 23.977 18.45 23.98 11.892C23.981 8.712 22.801 5.653 20.52 3.449ZM12.045 21.785H12.04C10.27 21.784 8.533 21.311 7.018 20.42L6.662 20.203L2.884 21.173L3.872 17.522L3.633 17.153C2.64 15.576 2.117 13.764 2.118 11.892C2.12 6.448 6.576 2.017 12.05 2.017C14.703 2.018 17.182 3.052 19.032 4.898C20.882 6.744 21.963 9.214 21.962 11.891C21.96 17.335 17.504 21.766 12.045 21.785Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <span class="label">WhatsApp</span>
+                            <a href="https://wa.me/94777300555" target="_blank" class="value">Chat with us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom - Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 <strong>Farm Lanka</strong>. All Rights Reserved. | Delivering Fresh, Supporting Local</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Order Modal -->
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeOrderModal()">&times;</span>
+            <h2>Place Your Order</h2>
+            <div class="form-group">
+                    <label>Select Milk Types</label>
+                    <!-- Milk Products Carousel Section -->
+                    <div class="carousel-container">
+                        <button type="button" class="carousel-arrow left" onclick="scrollCarousel(-1)">‹</button>
+                        <div class="carousel-wrapper">
+                            <div class="milk-carousel" id="milkCarousel">
+                                <div class="milk-option" data-milk-id="1">
+                                    <img src="/Product_images/1.png" alt="Chocolate Goat Milk" class="carousel-product-image">
+                                    <div class="milk-name">Chocolate Goat Milk</div>
+                                    <div class="quantity-controls">
+                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(1, -1)">-</button>
+                                        <input style="color: #000;" type="number" class="quantity-input" id="qty-1" value="0" min="0" onchange="updateItemQuantity(1)">
+                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(1, 1)">+</button>
+                                    </div>
+                                    <button type="button" class="add-btn" onclick="addToCart(1)">+ Add</button>
+                                </div>
+
+                                <div class="milk-option" data-milk-id="2">
+                                    <img src="/Product_images/2.png" alt="Strawberry Goat Milk" class="carousel-product-image">
+                                    <div class="milk-name">Strawberry Goat Milk</div>
+                                    <div class="quantity-controls">
+                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(2, -1)">-</button>
+                                        <input style="color: #000;" type="number" class="quantity-input" id="qty-2" value="0" min="0" onchange="updateItemQuantity(2)">
+                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(2, 1)">+</button>
+                                    </div>
+                                    <button type="button" class="add-btn" onclick="addToCart(2)">+ Add</button>
+                                </div>
+
+                                <div class="milk-option" data-milk-id="3">
+                                    <img src="/Product_images/3.png" alt="Vanilla Goat Milk" class="carousel-product-image">
+                                    <div class="milk-name">Vanilla Goat Milk</div>
+                                    <div class="quantity-controls">
+                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(3, -1)">-</button>
+                                        <input style="color: #000;" type="number" class="quantity-input" id="qty-3" value="0" min="0" onchange="updateItemQuantity(3)">
+                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(3, 1)">+</button>
+                                    </div>
+                                    <button type="button" class="add-btn" onclick="addToCart(3)">+ Add</button>
+                                </div>
+
+                                <div class="milk-option" data-milk-id="4">
+                                    <img src="/Product_images/4.png" alt="Almond Goat Milk" class="carousel-product-image">
+                                    <div class="milk-name">Almond Goat Milk</div>
+                                    <div class="quantity-controls">
+                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(4, -1)">-</button>
+                                        <input style="color: #000;" type="number" class="quantity-input" id="qty-4" value="0" min="0" onchange="updateItemQuantity(4)">
+                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(4, 1)">+</button>
+                                    </div>
+                                    <button type="button" class="add-btn" onclick="addToCart(4)">+ Add</button>
+                                </div>
+
+                                <div class="milk-option" data-milk-id="5">
+                                    <img src="/Product_images/big-bottle-plain.jpg" alt="Goat Milk (1 L)" class="carousel-product-image">
+                                    <div class="milk-name">Goat Milk (500ml)</div>
+                                    <div class="quantity-controls">
+                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(5, -1)">-</button>
+                                        <input style="color: #000;" type="number" class="quantity-input" id="qty-5" value="0" min="0" onchange="updateItemQuantity(5)">
+                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(5, 1)">+</button>
+                                    </div>
+                                    <button type="button" class="add-btn" onclick="addToCart(5)">+ Add</button>
+                                </div>
+
+                                <div class="milk-option" data-milk-id="6">
+                                    <img src="/Product_images/small-bottle-plain.jpg" alt="Goat Milk" class="carousel-product-image">
+                                    <div class="milk-name">Goat Milk (190 Ml)</div>
+                                    <div class="quantity-controls">
+                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(6, -1)">-</button>
+                                        <input style="color: #000;" type="number" class="quantity-input" id="qty-6" value="0" min="0" onchange="updateItemQuantity(6)">
+                                        <button type="button" class="quantity-control-btn" onclick="changeItemQuantity(6, 1)">+</button>
+                                    </div>
+                                    <button type="button" class="add-btn" onclick="addToCart(6)">+ Add</button>
+                                </div>
+                            </div>
+                        </div>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label>Email Address *</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Full Name *</label>
+                    <input type="text" id="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label>Delivery Address *</label>
+                    <textarea id="address" rows="3" required></textarea>
+                </div>
+                
+                
+                        <button type="button" class="carousel-arrow right" onclick="scrollCarousel(1)">›</button>
+                    </div> 
+                </div>
+
+                <div class="my-order-section">
+                    <h3>My Order</h3>
+                    <div id="orderTableContainer">
+                        <div class="empty-cart">No items added yet. Select items above to add to your order.</div>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">Send Order to WhatsApp</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
