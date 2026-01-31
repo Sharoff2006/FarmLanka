@@ -217,7 +217,7 @@ document.addEventListener('DOMContentLoaded', function() {
                           `%0AThank you!`;
             
             // Open WhatsApp with the message
-            const whatsappNumber = '94756297207'; // Farm Lanka WhatsApp number
+            const whatsappNumber = '94777300555'; // Farm Lanka WhatsApp number
             window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
             
             // Show success message
